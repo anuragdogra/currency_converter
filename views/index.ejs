@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <title>bitcoins</title>
+</head>
+<body>
+    <style>
+    body{
+     
+        text-align: center;
+
+    }
+    #heading{
+        width: 100%;
+        background-color:lightblue;  
+    }
+    .container{
+               background-image: url("https://static8.depositphotos.com/1384048/851/v/950/depositphotos_8518456-stock-illustration-background-currency-gold.jpg");
+
+        justify-content: center;
+        width: 50%;
+        height: 50%;
+        padding: 20px;
+        border-radius: 15px;
+        position: relative;
+        margin-top: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .containerh{
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       border-radius: 10px;
+       padding: 2px;
+       background-color:bisque;
+    }
+    .a{
+        border-radius: 10px;
+        width:200px;
+    }
+    .b{
+        width: 200px;
+        border-radius:10px; 
+    }
+    .container2{
+        padding: 25px;
+    }
+    .res{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+        background-color:gainsboro ;
+        padding: 3px;
+      
+    }
+    #convert{
+        width: 120px;
+        border-radius: 12px;
+        
+    }
+    
+
+     button:hover { font-weight: 600; }
+    
+
+    
+    </style>
+    <div class="container">
+    <div class="containerh"><h1>currency converter</h1></div>
+    
+    <form   class="container2" action="/" method="post">
+        
+        <select  id="a"name="from">
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+            <option  value="BTC">bitcoin</option>
+            <option  value="ETH">ethereum</option>
+            <option  value="BTN">BHUTAN </option>
+            <option  value="ISK">Iceland</option>
+            <option  value="AFN">Afghani</option>
+            <option  value="AMD">Armenium</option>
+
+
+
+        </select>
+        <select id="b" name="to">
+            <option value="USD">USD</option>
+            <option value="INR">INR</option>
+            <option value="EUR">er euros</option>
+            <option  value="BTC">bitcoin</option>
+            <option  value="ETH">ethereum</option>
+            <option  value="BTN">BHUTAN </option>
+            <option  value="ISK">Iceland</option>
+            <option  value="AFN">Afghani</option>
+            <option  value="AMD">Armenium</option>
+        </select>
+        <button type="submit" id="convert" name="button">Convert</button>
+    </form>
+    <div class="res">
+        <h2>the value is <%=answer %></h2 >
+        </div>
+    
+    </div>
+
+</body>
+</html>
